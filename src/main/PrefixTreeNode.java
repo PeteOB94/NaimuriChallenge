@@ -5,8 +5,8 @@ import java.util.Set;
 import java.util.TreeSet;
 
 public class PrefixTreeNode {
-	Map<Character, PrefixTreeNode> children;
-	Set<String> words;
+	public Map<Character, PrefixTreeNode> children;
+	public Set<String> words;
 	
 	public PrefixTreeNode() {
 		this.children = new HashMap<Character, PrefixTreeNode>();

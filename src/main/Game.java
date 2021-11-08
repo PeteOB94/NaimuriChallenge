@@ -12,7 +12,7 @@ public class Game {
 	int columns = 0;
 	List<Character> letters = new ArrayList<Character>();
 	Dictionary dictionary = new Dictionary();
-	List<String> validWords = new ArrayList<>();
+	public List<String> validWords = new ArrayList<>();
 	Set<List<String>> validCombinations = new HashSet<>();
 	
 	public void getInput() {
@@ -26,7 +26,7 @@ public class Game {
 	}
 
 	void setupDictionary() throws IOException {
-		this.dictionary.setupDictionary(this);
+		this.dictionary.setupDictionary(this.getColumns());
 	}
 	
 	public void getValidWords(Dictionary dictionary, List<Character> charList) {
